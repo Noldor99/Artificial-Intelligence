@@ -16,6 +16,10 @@
    max-width: 1448px
    padding: 0 20px
    margin: 0 auto
+%w_1206
+   max-width: 1246px
+   padding: 0 20px
+   margin: 0 auto
 
 %w_1146
    max-width: 1186px
@@ -325,9 +329,12 @@ body
 
    &__wrap
       @extend %w_1920
+      padding-bottom: 120px
    &__container
+      overflow: hidden
    &__column
       width: 400px
+
    &__body
 
 .body-agency
@@ -365,3 +372,111 @@ body
       text-align: center
       color: #FFFFFF
       opacity: 0.7
+//agency end
+//solution start
+.solution
+
+   &__wrap
+      display: flex
+      max-width: 1240px
+      padding: 0 20px
+      margin: 0 auto
+      align-items: center
+   &__container
+      flex: 0 1 548px
+   &__text
+   &__photo
+      flex: 0 1 642px
+
+.text-solution
+   max-width: 548
+   &__title
+      font-weight: 700
+      font-size: 40px
+      line-height: 130%
+      color: #FFFFFF
+      padding-bottom: 40px
+   &__parag
+      font-weight: 600
+      font-size: 16px
+      line-height: 160%
+      color: #FFFFFF
+      opacity: 0.7
+      width: 460px
+.photo-solution
+   position: relative
+   left: -2%
+   &__img
+      max-width: 100%
+//footer start
+.footer
+   width: 100%
+   background: #070E1C
+   padding-top: 50px
+   &__wrap
+      @extend %w_1206
+      display: flex
+   &__start
+      flex: 0 1 350px
+      display: flex
+      justify-content: flex-end
+   &__menu
+      flex: 0 1 195px
+   &__list
+   &__end
+      flex: 0 1 261px
+.start-footer
+
+   &__logo
+      img
+         max-width: 100%
+   &__text
+      font-weight: 600
+      font-size: 15.9627px
+      line-height: 22px
+      color: #3A68B8
+      padding-bottom: 10px
+   &__parag
+      width: 261px
+      padding-bottom: 37px
+      font-weight: 450
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+      opacity: 0.6
+   &__icon
+      width: 283px
+      font-weight: 500
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+      padding-bottom: 20px
+.list-footer
+
+   &__item
+      padding-bottom: 20px
+      font-weight: 450
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+      opacity: 0.6
+.big
+   font-weight: 500
+   font-size: 16px
+   line-height: 20px
+   color: #FFFFFF
+.end-footer
+
+   &__title
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: #FFFFFF
+      padding-bottom: 32px
+   &__parag
+      font-weight: 450
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+      opacity: 0.6
+      max-width: 261px

@@ -15,6 +15,11 @@
   padding: 0 20px;
   margin: 0 auto; }
 
+.footer__wrap {
+  max-width: 1246px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
 .header__wrap, .logoipsum__wrap {
   max-width: 1186px;
   padding: 0 20px;
@@ -289,6 +294,10 @@ body {
 
   .aplly__body {
     width: inherit; } }
+.agency__wrap {
+  padding-bottom: 120px; }
+.agency__container {
+  overflow: hidden; }
 .agency__column {
   width: 400px; }
 
@@ -327,5 +336,105 @@ body {
     text-align: center;
     color: #FFFFFF;
     opacity: 0.7; }
+
+.solution__wrap {
+  display: flex;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  align-items: center; }
+.solution__container {
+  flex: 0 1 548px; }
+.solution__photo {
+  flex: 0 1 642px; }
+
+.text-solution {
+  max-width: 548; }
+  .text-solution__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-bottom: 40px; }
+  .text-solution__parag {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    width: 460px; }
+
+.photo-solution {
+  position: relative;
+  left: -2%; }
+  .photo-solution__img {
+    max-width: 100%; }
+
+.footer {
+  width: 100%;
+  background: #070E1C;
+  padding-top: 50px; }
+  .footer__wrap {
+    display: flex; }
+  .footer__start {
+    flex: 0 1 350px;
+    display: flex;
+    justify-content: flex-end; }
+  .footer__menu {
+    flex: 0 1 195px; }
+  .footer__end {
+    flex: 0 1 261px; }
+
+.start-footer__logo img {
+  max-width: 100%; }
+.start-footer__text {
+  font-weight: 600;
+  font-size: 15.9627px;
+  line-height: 22px;
+  color: #3A68B8;
+  padding-bottom: 10px; }
+.start-footer__parag {
+  width: 261px;
+  padding-bottom: 37px;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6; }
+.start-footer__icon {
+  width: 283px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-bottom: 20px; }
+
+.list-footer__item {
+  padding-bottom: 20px;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6; }
+
+.big {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF; }
+
+.end-footer__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-bottom: 32px; }
+.end-footer__parag {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  max-width: 261px; }
 
 /*# sourceMappingURL=style.css.map */

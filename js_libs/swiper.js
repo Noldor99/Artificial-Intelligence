@@ -43,7 +43,7 @@ new Swiper('.image-slider',{
       // Буллеты, текущее положение, прогрессбар
       pagination: {
          el: '.swiper-pagination',
-         /*
+         /* <div class="swiper-pagination"></div>
          // Буллеты
          type: 'bullets',
          clickable: true,
