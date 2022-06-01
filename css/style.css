@@ -213,7 +213,7 @@ body {
     flex: 0 0 172px;
     margin-right: 20px; }
   .button-body-intro__watch {
-    flex: 0 0 224px;
+    flex: 0 1 224px;
     padding-right: 25px; }
 
 .pfoto-intro__img {
@@ -265,7 +265,7 @@ body {
   padding-right: 20px; }
 
 .body-aplly {
-  width: 484px; }
+  max-width: 484px; }
   .body-aplly__title {
     font-family: "Open Sans";
     font-style: normal;
@@ -279,7 +279,7 @@ body {
     font-size: 16px;
     line-height: 160%;
     color: #FFFFFF;
-    width: 460px;
+    max-width: 460px;
     opacity: 0.7;
     padding-bottom: 50px; }
   .body-aplly__button {
@@ -377,12 +377,24 @@ body {
   .photo-solution__img {
     max-width: 100%; }
 
+@media (max-width: 950px) {
+  .solution__wrap {
+    flex-direction: column; }
+
+  .solution__text {
+    max-width: inherit; }
+
+  .text-solution__parag {
+    max-width: inherit;
+    width: inherit; } }
 .footer {
   width: 100%;
   background: #070E1C;
   padding-top: 100px; }
   .footer__wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 140px; }
   .footer__start {
     flex: 0 1 350px;
@@ -482,6 +494,38 @@ body {
     font-weight: 450;
     font-size: 14px;
     line-height: 18px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    position: relative; }
+    .language-footer__text::after, .language-footer__text::before {
+      display: block;
+      content: "";
+      position: absolute;
+      border: 1px solid #79AF98;
+      background: #79AF98;
+      width: 7px;
+      top: 7px; }
+    .language-footer__text::after {
+      right: 5px;
+      transform: rotate(45deg); }
+    .language-footer__text::before {
+      right: 0;
+      transform: rotate(-45deg); }
+    .language-footer__text.active::after {
+      transform: rotate(-45deg);
+      border: 1px solid #dcd336;
+      background: #dcd336;
+      right: -10px; }
+    .language-footer__text.active::before {
+      transform: rotate(45deg);
+      border: 1px solid #dcd336;
+      background: #dcd336;
+      right: -10px; }
+
+.block__text {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6; }
 
 /*# sourceMappingURL=style.css.map */

@@ -229,7 +229,7 @@ body
       margin-right: 20px
    &__watch
       @extend %bottom_1
-      flex: 0 0 224px
+      flex: 0 1 224px
       padding-right: 25px
 .pfoto-intro
 
@@ -293,7 +293,7 @@ body
       max-width: 100%
       padding-right: 20px
 .body-aplly
-   width: 484px
+   max-width: 484px
    &__title
       font-family: 'Open Sans'
       font-style: normal
@@ -309,7 +309,7 @@ body
       line-height: 160%
 
       color: #FFFFFF
-      width: 460px
+      max-width: 460px
       opacity: 0.7
       padding-bottom: 50px
    &__button
@@ -431,6 +431,14 @@ body
    &__img
       max-width: 100%
 //solution end
+@media (max-width: 950px)
+   .solution__wrap
+      flex-direction: column
+   .solution__text
+      max-width: inherit
+   .text-solution__parag
+      max-width: inherit
+      width: inherit
 //footer start
 .footer
    width: 100%
@@ -439,6 +447,8 @@ body
    &__wrap
       @extend %w_1206
       display: flex
+      flex-wrap: wrap
+      justify-content: center
       padding-bottom: 140px
    &__start
       flex: 0 1 350px
@@ -539,3 +549,36 @@ body
       font-size: 14px
       line-height: 18px
       color: #FFFFFF
+      position: relative
+      &::after,
+      &::before
+         display: block
+         content: ''
+         position: absolute
+         border: 1px solid #79AF98
+         background: #79AF98
+         width: 7px
+         top: 7px
+      &::after
+         right: 5px
+         transform: rotate(45deg)
+      &::before
+         right: 0
+         transform: rotate(-45deg)
+      &.active
+         &::after
+            transform: rotate(-45deg)
+            border: 1px solid #dcd336
+            background: #dcd336
+            right: -10px
+         &::before
+            transform: rotate(45deg)
+            border: 1px solid #dcd336
+            background: #dcd336
+            right: -10px
+.block__text
+   font-weight: 450
+   font-size: 14px
+   line-height: 18px
+   color: #FFFFFF
+   opacity: 0.6
