@@ -9,13 +9,23 @@ if (iconMenu) {
 	});
 }
 
-new Swiper('.agency__container',{
-   slidesPerView:2,
+new Swiper('.agency-slider',{
+   slidesPerView:5,
 //   centeredSlides: true,
    loop: true,
    spaceBetween: 30,
-
+   slidesPerGroup: 2,
    pagination: {
       el: '.swiper-pagination',
    },
+   });
+
+   $(document).ready(function() {
+      $('.block__title').click(function(event) {
+         if($('.block').hasClass('one')){
+            $('.block__title').not($(this)).removeClass('active');
+            $('.block__text').not($(this).next()).slideUp(300);
+         }
+         $(this).toggleClass('active').next().slideToggle(300);
+      });
    });

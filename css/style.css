@@ -213,7 +213,8 @@ body {
     flex: 0 0 172px;
     margin-right: 20px; }
   .button-body-intro__watch {
-    flex: 0 0 224px; }
+    flex: 0 0 224px;
+    padding-right: 25px; }
 
 .pfoto-intro__img {
   max-width: 100%; }
@@ -295,61 +296,67 @@ body {
   .aplly__body {
     width: inherit; } }
 .agency__wrap {
-  padding-bottom: 120px; }
-.agency__container {
+  padding-bottom: 200px;
   overflow: hidden; }
-.agency__column {
-  width: 400px; }
 
-.body-agency {
-  overflow: hidden;
-  width: 362px;
-  margin: 0 auto;
-  background: #000000;
+.agency-slider__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 125%;
+  text-align: center;
+  width: 302px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding-bottom: 30px; }
+.agency-slider__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.4;
+  width: 302px; }
+
+.agency-slider__image {
+  width: 98px;
+  height: 103px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.agency-slider {
+  position: relative; }
+
+.agency-slider__slide {
+  background: #0e1623;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px; }
-  .body-agency__icom {
-    width: 98px;
-    height: 103px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px; }
-    .body-agency__icom img {
-      max-width: 100%; }
-  .body-agency__title {
-    width: 302px;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 125%;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.7; }
-  .body-agency__parag {
-    width: 302px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.7; }
+
+.agency .agency__wrap .swiper-pagination-horizontal {
+  bottom: -40px; }
+.agency .agency__wrap .swiper-pagination-bullet {
+  background: #2C3647;
+  height: 12px;
+  width: 12px; }
 
 .solution__wrap {
   display: flex;
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 100px; }
 .solution__container {
   flex: 0 1 548px; }
 .solution__photo {
   flex: 0 1 642px; }
 
 .text-solution {
-  max-width: 548; }
+  max-width: 548px; }
   .text-solution__title {
     font-weight: 700;
     font-size: 40px;
@@ -373,15 +380,17 @@ body {
 .footer {
   width: 100%;
   background: #070E1C;
-  padding-top: 50px; }
+  padding-top: 100px; }
   .footer__wrap {
-    display: flex; }
+    display: flex;
+    padding-bottom: 140px; }
   .footer__start {
     flex: 0 1 350px;
     display: flex;
     justify-content: flex-end; }
   .footer__menu {
-    flex: 0 1 195px; }
+    flex: 0 1 195px;
+    margin-top: 20px; }
   .footer__end {
     flex: 0 1 261px; }
 
@@ -407,7 +416,17 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-left: 22px; }
+
+.list {
+  background: url(../img/svg/list.svg) no-repeat left top 3px; }
+
+.phone {
+  background: url(../img/svg/phone.svg) no-repeat left top 3px; }
+
+.map {
+  background: url(../img/svg/map.svg) no-repeat left top 3px; }
 
 .list-footer__item {
   padding-bottom: 20px;
@@ -421,7 +440,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  opacity: 1; }
 
 .end-footer__title {
   font-weight: 500;
@@ -436,5 +456,32 @@ body {
   color: #FFFFFF;
   opacity: 0.6;
   max-width: 261px; }
+
+.end-footer__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.1;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.web-footer {
+  display: flex;
+  column-gap: 30px; }
+  .web-footer__icon {
+    padding-bottom: 50px; }
+
+.language-footer {
+  display: flex;
+  align-items: flex-start; }
+  .language-footer__icon {
+    padding-top: 2px;
+    padding-right: 8px; }
+  .language-footer__text {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */
